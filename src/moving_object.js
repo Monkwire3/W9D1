@@ -1,7 +1,5 @@
 function MovingObject() {
     let argsObj = Array.from(arguments)[0];
-    console.log("in moving object const ");
-    console.log(argsObj);
     this.pos = argsObj["pos"];
     this.vel = argsObj["vel"];
     this.radius = argsObj["radius"];
@@ -11,6 +9,7 @@ function MovingObject() {
 
 
 MovingObject.prototype.draw = function(ctx) {
+    console.log("in moving object draw")
      ctx.beginPath();
      ctx.arc(this.pos[0], this.pos[1], this.radius, 0, 2 * Math.PI, true);
      ctx.strokeStyle = this.color;
