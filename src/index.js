@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const MovingObject = require("./moving_object.js");
+    const Util = require("./util.js");
+    const Asteroid = require("./asteroid.js")
+    
     console.log("index");
 
     const canvas = document.getElementById("game-canvas");
@@ -21,4 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     mo.draw(ctx);
 
     window.MovingObject = MovingObject; // For testing only
+    window.Asteroid = Asteroid; // For testing only
+
 })
