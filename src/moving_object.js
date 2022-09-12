@@ -1,7 +1,7 @@
 function MovingObject() {
     let argsObj = Array.from(arguments)[0];
     console.log("in moving object const ");
-    console.log(`arguments: ${arguments}`);
+    console.log(argsObj);
     this.pos = argsObj["pos"];
     this.vel = argsObj["vel"];
     this.radius = argsObj["radius"];
